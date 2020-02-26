@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sample_images_name">
+        <item>Night Street</item>
+        <item>Architect Desk</item>
+        <item>City Building</item>
+        <item>Computer Keyboard</item>
+        <item>Grunge Window</item>
+
+        <item>Park Bench</item>
+        <item>Table Cocktails</item>
+        <item>Side Park</item>
+        <item>Hanging Clothes</item>
+        <item>Coffee Camera</item>
+
+        <item>Morning Flower</item>
+        <item>Foggy Hill</item>
+        <item>The Backpacker</item>
+        <item>River Forest</item>
+        <item>Mist Mountain</item>
+    </string-array>
+
+    <integer-array name="people_images">
+        <item>@drawable/photo_male</item>
+        <item>@drawable/photo_female</item>
+        <item>@drawable/photo_male</item>
+        <item>@drawable/photo_female</item>
+        <item>@drawable/photo_male</item>
+
+        <item>@drawable/photo_male</item>
+        <item>@drawable/photo_female</item>
+        <item>@drawable/photo_male</item>
+        <item>@drawable/photo_female</item>
+        <item>@drawable/photo_male</item>
+
+        <item>@drawable/photo_male</item>
+        <item>@drawable/photo_female</item>
+        <item>@drawable/photo_male</item>
+        <item>@drawable/photo_female</item>
+        <item>@drawable/photo_male</item>
+    </integer-array>
+
+    <string-array name="people_names">
+        <item>Anderson Thomas</item>
+        <item>Adams Green</item>
+        <item>Laura Michelle</item>
+        <item>Betty L</item>
+        <item>Miller Wilson</item>
+
+        <item>Garcia Lewis</item>
+        <item>Roberts Turner</item>
+        <item>Mary Jackson</item>
+        <item>Sarah Scott</item>
+        <item>Kevin John</item>
+
+        <item>Elizabeth</item>
+        <item>Evans Collins</item>
+        <item>Roberts</item>
+        <item>Betty C</item>
+        <item>Susan Lee</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="alphabet">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>0</item>
+    </string-array>
+
+</resources>

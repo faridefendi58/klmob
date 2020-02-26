@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mobile_navigation"
+        app:startDestination="@+id/nav_search">
+
+    <fragment
+            android:id="@+id/nav_search"
+            android:name="net.kuncilagu.chord.ui.search.SearchFragment"
+            android:label="@string/menu_search"
+            tools:layout="@layout/fragment_search" />
+
+    <fragment
+            android:id="@+id/nav_favorite"
+            android:name="net.kuncilagu.chord.ui.favorite.FavoriteFragment"
+            android:label="@string/menu_favorite"
+            tools:layout="@layout/fragment_favorite" />
+
+    <fragment
+            android:id="@+id/nav_artists"
+            android:name="net.kuncilagu.chord.ui.artist.ArtistsFragment"
+            android:label="@string/menu_artists"
+            tools:layout="@layout/fragment_artists" />
+
+    <fragment
+            android:id="@+id/nav_history"
+            android:name="net.kuncilagu.chord.ui.history.HistoryFragment"
+            android:label="@string/menu_history"
+            tools:layout="@layout/fragment_history" />
+
+    <fragment
+            android:id="@+id/nav_chart"
+            android:name="net.kuncilagu.chord.ui.chart.ChartFragment"
+            android:label="@string/menu_chart"
+            tools:layout="@layout/fragment_chart" />
+
+    <fragment
+            android:id="@+id/nav_about"
+            android:name="net.kuncilagu.chord.ui.about.AboutFragment"
+            android:label="@string/menu_about"
+            tools:layout="@layout/fragment_about" />
+
+    <fragment
+            android:id="@+id/nav_request_song"
+            android:name="net.kuncilagu.chord.ui.request.RequestChordsFragment"
+            android:label="@string/menu_request_chords"
+            tools:layout="@layout/fragment_request_chords" />
+</navigation>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_search"
+                android:icon="@drawable/ic_menu_search"
+                android:title="@string/menu_search" />
+        <item
+                android:id="@+id/nav_favorite"
+                android:icon="@drawable/ic_menu_favorite"
+                android:title="@string/menu_favorite" />
+        <item
+                android:id="@+id/nav_artists"
+                android:icon="@drawable/ic_menu_artists"
+                android:title="@string/menu_artists" />
+        <item
+                android:id="@+id/nav_history"
+                android:icon="@drawable/ic_menu_history"
+                android:title="@string/menu_history" />
+        <item
+                android:id="@+id/nav_chart"
+                android:icon="@drawable/ic_menu_chart"
+                android:title="@string/menu_chart"
+                android:visible="false"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_menu_about"
+                    android:title="@string/menu_about" />
+            <item
+                    android:id="@+id/nav_request_song"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/menu_request_chords" />
+        </menu>
+    </item>
+
+</menu>
