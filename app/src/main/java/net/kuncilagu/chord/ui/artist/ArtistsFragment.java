@@ -75,6 +75,7 @@ public class ArtistsFragment extends Fragment {
     private RecyclerView recyclerResult;
     List<SerializableArtist> list_artists = new ArrayList<SerializableArtist>();
     private AdapterListArtist adapterListArtist;
+    private String android_id = "0";
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -87,6 +88,8 @@ public class ArtistsFragment extends Fragment {
     }
 
     private void initComponent() {
+        android_id = ((MainActivity)context).getAndroidId();
+
         progress_bar = (ProgressBar) root.findViewById(R.id.progress_bar);
         lyt_no_result = (LinearLayout) root.findViewById(R.id.lyt_no_result);
 
@@ -294,6 +297,7 @@ public class ArtistsFragment extends Fragment {
                 params.put("limit", "10");
                 params.put("order_by", "t.published_at");
                 params.put("cached", "1");
+                params.put("android_id", android_id);
                 buildLatestResultList(params);
             } else {
                 Toast.makeText(context, getResources().getString(R.string.message_offline_simple), Toast.LENGTH_LONG);

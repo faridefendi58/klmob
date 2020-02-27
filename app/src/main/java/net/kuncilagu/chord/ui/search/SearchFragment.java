@@ -38,12 +38,16 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 import com.google.android.material.snackbar.Snackbar;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -54,6 +58,7 @@ import net.kuncilagu.chord.MainActivity;
 import net.kuncilagu.chord.R;
 import net.kuncilagu.chord.utils.AppController;
 import net.kuncilagu.chord.utils.Server;
+import net.kuncilagu.chord.utils.Tools;
 import net.kuncilagu.chord.utils.ViewAnimation;
 
 public class SearchFragment extends Fragment {
@@ -73,6 +78,7 @@ public class SearchFragment extends Fragment {
     private LinearLayout lyt_suggestion;
     private LinearLayout result_container;
     private RecyclerView recyclerResult;
+    private String android_id = "0";
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -87,6 +93,8 @@ public class SearchFragment extends Fragment {
     }
 
     private void initComponent() {
+        android_id = ((MainActivity)context).getAndroidId();
+
         progress_bar = (ProgressBar) root.findViewById(R.id.progress_bar);
         lyt_no_result = (LinearLayout) root.findViewById(R.id.lyt_no_result);
 
@@ -206,6 +214,7 @@ public class SearchFragment extends Fragment {
                     Map<String, String> params = new HashMap<String, String>();
                     params.put("limit", "10");
                     params.put("q", query);
+                    params.put("android_id", android_id);
                     buildSearchResultList(params);
                 } else {
                     dummyData();
@@ -345,7 +354,7 @@ public class SearchFragment extends Fragment {
     }
 
     private void dummyData() {
-        String result = Server.DUMMY_DATA;
+        String result = Tools.loadJsonFile(context, "dummy.json");
         try {
             JSONObject jObj = new JSONObject(result);
             int success = jObj.getInt("success");

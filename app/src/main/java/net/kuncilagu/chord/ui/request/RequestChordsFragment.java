@@ -1,6 +1,7 @@
 package net.kuncilagu.chord.ui.request;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -53,6 +54,7 @@ public class RequestChordsFragment extends Fragment {
 
     private RequestChordsViewModel requestChordViewModel;
     private View root;
+    private Context context;
     private EditText request_name;
     private EditText request_email;
     private EditText request_song_title;
@@ -62,12 +64,14 @@ public class RequestChordsFragment extends Fragment {
     private TextView success_message;
     private Button btn_submit;
     private LinearLayout form_container;
+    private String android_id = "0";
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         requestChordViewModel =
                 ViewModelProviders.of(this).get(RequestChordsViewModel.class);
         root = inflater.inflate(R.layout.fragment_request_chords, container, false);
+        context = container.getContext();
 
         initView();
         initAction();
@@ -88,6 +92,8 @@ public class RequestChordsFragment extends Fragment {
     }
 
     private void initAction() {
+        android_id = ((MainActivity)context).getAndroidId();
+
         btn_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -97,6 +103,8 @@ public class RequestChordsFragment extends Fragment {
                 String _song_artist_name = request_artist_name.getText().toString();
                 Integer _type = request_type.getCheckedRadioButtonId();
                 Map<String, String> _data = new HashMap<String, String>();
+                _data.put("android_id", android_id);
+
                 String errors = "";
                 if (_name.length() <= 0) {
                     if (errors.length() > 0) {

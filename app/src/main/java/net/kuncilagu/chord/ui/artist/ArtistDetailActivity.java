@@ -79,8 +79,8 @@ public class ArtistDetailActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(artist.getName());
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#546E7A")));
-        getSupportActionBar().setStackedBackgroundDrawable(new ColorDrawable(Color.parseColor("#37474F")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#29a085")));
+        getSupportActionBar().setStackedBackgroundDrawable(new ColorDrawable(Color.parseColor("#2c806d")));
 
         TextView toolbar_title = (TextView) findViewById(R.id.toolbar_title);
         toolbar_title.setText(artist.getName());

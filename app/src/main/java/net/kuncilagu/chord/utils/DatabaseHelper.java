@@ -76,7 +76,6 @@ public class DatabaseHelper extends SQLiteOpenHelper implements Database {
                 + "type TEXT(16),"
                 + "description TEXT(256),"
                 + "date_added DATETIME"
-
                 + ");");
 
         Calendar c = Calendar.getInstance();

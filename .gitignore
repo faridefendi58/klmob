@@ -70,6 +70,7 @@ fastlane/readme.md
 MainActivity.java
 Server.java
 dummy.json
+artists.json
 DatabaseContents.java
 strings.xml
 ic_launcher-web.png

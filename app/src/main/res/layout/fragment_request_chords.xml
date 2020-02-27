@@ -53,7 +53,7 @@
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:hint="Nama Anda"
+                        android:hint="@string/label_name"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="4dp"
                         android:backgroundTint="@color/grey_500"/>
@@ -64,7 +64,7 @@
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:inputType="textEmailAddress"
-                        android:hint="Email Anda"
+                        android:hint="@string/label_email"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="4dp"
                         android:backgroundTint="@color/grey_500"/>
@@ -105,7 +105,7 @@
                         android:layout_marginTop="8dp"
                         android:ems="10"
                         android:inputType="text"
-                        android:hint="Judul Lagu"
+                        android:hint="@string/label_song_title"
                         android:backgroundTint="@color/grey_500"/>
 
                 <EditText
@@ -114,7 +114,7 @@
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:inputType="text"
-                        android:hint="Nama Band/Artist"
+                        android:hint="@string/label_artist_name"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="4dp"
                         android:backgroundTint="@color/grey_500"/>
@@ -125,7 +125,7 @@
                         android:layout_height="wrap_content"
                         android:paddingVertical="@dimen/spacing_middle"
                         android:background="@color/green_500"
-                        android:text="Request Sekarang"
+                        android:text="@string/button_request_now"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
                         android:textStyle="bold"

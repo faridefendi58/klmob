@@ -34,6 +34,10 @@
         <activity android:name=".ui.artist.ArtistDetailActivity"
                 android:screenOrientation="portrait"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+
+        <meta-data
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="@string/google_ad_client"/>
     </application>
 
 </manifest>
